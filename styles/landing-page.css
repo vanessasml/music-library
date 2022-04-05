@@ -1,0 +1,58 @@
+.container-fluid {
+    padding:0
+}
+section.landing, section.search {
+    padding: 0;
+    /*max-width: 1280px;*/
+    margin: 0 auto;
+}
+
+section.landing {
+    padding: 0;
+}
+
+section.search {
+    padding: 20px 50px;
+    background-color: #eee;
+}
+
+section.search .choces__inner {
+    border-radius: 25px;
+}
+
+div#artist_concert {
+    background-image: url("../static/artists_concert.jpg");
+    background-position-y: center;
+}
+
+
+div#browse_albums {
+    background-image: url("../static/browsing_albums.jpg");
+    background-position-y: bottom;
+}
+
+div#music_listening {
+    background-image: url("../static/music_listening_v2.jpg");
+    background-position-y: center;
+}
+.carousel-img {
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1280px) {
+    .carousel-img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-img  {
+        height:200px;
+    }
+}
+
+.bi-music-note-list {
+    margin-right: 5px;
+}
