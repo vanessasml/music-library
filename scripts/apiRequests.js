@@ -1,8 +1,9 @@
 const urlItunesApi = (type, id, entityValue, attributeValue=null) => {
-    const url = new URL('https://itunes.apple.com/us/' + type);
+    const url = new URL('https://itunes.apple.com/' + type);
     const queryId = (type == 'search') ? 'term' : 'id';
     const params = {
         [queryId]: id,
+        country:'de',
         entity: entityValue,
         ...(attributeValue) && {attribute: attributeValue}
     }
