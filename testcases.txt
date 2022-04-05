@@ -1,0 +1,10 @@
+## Test cases
+
+### Test search
+1. Search for the artist "Pink floyd" and check results. Run a new search for "Pink floid" or try other similar typos. Confirm that the results are the same.
+2. Search for the artist's term "Frank" and explore the suggested artists
+
+### Test app navigation
+3. Search for "Beyonce", scroll down and navigate through the different pages.
+4. Open an album, test the preview for a particular track.
+5. Open an album with more than 20 tracks and explore the navigation in the bottom of the album.
