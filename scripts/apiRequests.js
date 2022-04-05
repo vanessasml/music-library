@@ -3,7 +3,7 @@ const urlItunesApi = (type, id, entityValue, attributeValue=null) => {
     const queryId = (type == 'search') ? 'term' : 'id';
     const params = {
         [queryId]: id,
-        country:'de',
+        country:'us',
         entity: entityValue,
         ...(attributeValue) && {attribute: attributeValue}
     }
@@ -11,11 +11,16 @@ const urlItunesApi = (type, id, entityValue, attributeValue=null) => {
     return url
 }
 
+const corsHeader = {
+    'Acces-Control-Allow-Origin':'*'
+}
 function getArtist(artistTerm) {
 
     const url = urlItunesApi('search', artistTerm, 'musicArtist')
+    
+   
     try {
-        fetch(url).then(results => {
+        fetch(url,{headers:corsHeader}).then(results => {
             return results.json();
         }).then(res => {
             if(res.resultCount>1) {
@@ -44,7 +49,7 @@ const getAlbums = (artistId) => {
 
     const url = urlItunesApi('lookup', artistId, 'album', 'albumTerm')
     try {
-        fetch(url).then(results => {
+        fetch(url, {headers:corsHeader}).then(results => {
             return results.json();
         }).then(res => {
             if(res.resultCount>1) {
