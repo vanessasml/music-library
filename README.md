@@ -2,6 +2,6 @@
 A music library that fetches data from the iTunes Search API and allows you to find albums and tracks from your favorite Artists or Bands.
 
 In order to access the App, please open the downloaded zip and run directly index.html in the browser.
-In case you face any issues, the app is aso available via https://vanessasml.github.io
+In case you face any issues, the app is aso available via [https://vanessasml.github.io/music-library](https://vanessasml.github.io/music-library/)
 
 Thank you.
